@@ -11,30 +11,7 @@ mv ~/.config/nvim ~/.config/nvim.bak
 mv ~/.local/share/nvim ~/.local/share/nvim.bak
 ```
 
-#### Clone AstroNvim
-
-```shell
-git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-```
-
-#### Create a new user repository from this template
-
-Press the "Use this template" button above to create a new repository to store your user configuration.
-
-You can also just clone this repository directly if you do not want to track your user configuration in GitHub.
-
-#### Clone the repository
-
-```shell
-git clone https://github.com/tritonJS826/astronvim-custom-config ~/.config/nvim/lua/user
-```
-
-#### Start Neovim
-
-```shell
-nvim
-```
-#### full install from scratch
+#### Full install from scratch
 ```shell
 #!/bin/bash
 
@@ -42,7 +19,17 @@ sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt-get update
 sudo apt-get install neovim
 
+# install astronvim
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+# install custom config
 git clone https://github.com/tritonJS826/astronvim-custom-config ~/.config/nvim/lua/user
 ```
 
+## LSP
+for working with language feature you shoud install specific LanguageServer and LanguageParser extensions (https://astronvim.com/#-setup). You can navigate through extensions by tab/Shif+tab in nvim command line:
+```
+:LspInstall typescript
+:LspInstall eslint
+:TSInstall typescript
+:TSInstall javascript
+```
