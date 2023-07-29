@@ -34,3 +34,15 @@ git clone https://github.com/tritonJS826/astronvim-custom-config ~/.config/nvim/
 ```shell
 nvim
 ```
+#### full install from scratch
+```shell
+#!/bin/bash
+
+sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo apt-get update
+sudo apt-get install neovim
+
+git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+git clone https://github.com/tritonJS826/astronvim-custom-config ~/.config/nvim/lua/user
+```
+
