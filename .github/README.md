@@ -22,7 +22,7 @@ mv ~/.local/share/nvim ~/.local/share/nvim.bak
 sudo snap install nvim --classic 
 
 # install astronvim
-git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+git clone --depth 1 git@github.com:tritonJS826/astronvim-custom-config.git ~/.config/nvim
 # install custom config
 git clone https://github.com/tritonJS826/astronvim-custom-config ~/.config/nvim/lua/user
 ```
