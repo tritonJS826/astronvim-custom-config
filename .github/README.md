@@ -15,11 +15,14 @@ mv ~/.local/share/nvim ~/.local/share/nvim.bak
 ```shell
 #!/bin/bash
 
-# you should add moder nvim version by adding ppa repository or by snap
-# sudo add-apt-repository ppa:neovim-ppa/unstable
-# sudo apt-get update
-# sudo apt-get install neovim
-sudo snap install nvim --classic 
+# you should add moder nvim version by adding ppa repository
+sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo apt-get update
+sudo apt-get install neovim
+# snap does not provide the last version and it could work with some bugs (conflicts with plugins)
+# sudo snap install nvim --classic 
+
+
 
 # install astronvim
 git clone --depth 1 git@github.com:tritonJS826/astronvim-custom-config.git ~/.config/nvim
